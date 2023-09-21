@@ -113,7 +113,7 @@ class English extends StatelessWidget {
                     style: TextStyle(color: Colors.white),
                   ),
                   Container(
-                    child: Text(
+                    child:const Text(
                       " :        maltager658@gmail.com",
                       style: TextStyle(color: Colors.white, fontSize: 20.0),
                     ),
