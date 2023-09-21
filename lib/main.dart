@@ -43,22 +43,74 @@ class English extends StatelessWidget {
       ),
       // ignore: sized_box_for_whitespace
       body: Container(
-       color: Colors.amber,
-        // height: double.infinity,
-        // width: double.infinity,
+       color: Colors.black,
+     height: double.infinity,
+     width: double.infinity,
         child: Column(
           children: [
                Container(
-                color: Colors.amber,
+            
                 margin: const EdgeInsets.only(top: 20.0,),
-                 child: CircleAvatar(
-                           child: Image.asset("assets/images/me.jpg"),
-                            radius: 30.0,
+                 child: const  CircleAvatar(
+                        
+                            radius: 50.0,
+                            // ignore: unnecessary_const
                             backgroundImage: const AssetImage("assets/images/me.jpg"),
                             
                              ),
                ),
 
+                        const SizedBox(
+
+                          height: 200.0, 
+                          width: 100.0,
+                                            
+                        ),
+
+                Row(
+                  children: [
+                    Container(margin: const EdgeInsets.only(left: 20.0),
+                      child: const Text(
+                       "Name :" ,
+                        style: TextStyle(
+                          color: Colors.white70,
+                          fontSize: 25.0,
+                          fontWeight: FontWeight.bold,
+                          
+                        ),
+                        textAlign:TextAlign.left,
+                      ),
+                    ),
+
+  Container(margin: const EdgeInsets.only(left: 20.0),
+                      child: const Text(
+                       "Mohamed Ahmed",
+                        style: TextStyle(
+                          color: Colors.white70,
+                          fontSize: 25.0, 
+                          // fontWeight: FontWeight.bold,
+                          
+                        ),
+                        textAlign:TextAlign.left,
+                      ),
+                    ),
+                     
+
+                  ],
+                ),
+       const   SizedBox(
+            height: 40.0,
+            width: 20.0,
+          ),
+
+           Row(
+            children: [
+    Image.asset(
+      "assets/img/icons8-gmail.SVG",
+      color: Colors.red,
+    ),
+            ],
+          )
           ],
         ),
       ),
