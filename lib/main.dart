@@ -1,10 +1,9 @@
 // ignore_for_file: file_names, sort_child_properties_last, duplicate_ignore, avoid_unnecessary_containers
 
-// import 'dart:ui';
-
 import 'package:flutter/material.dart';
 // ignore: unnecessary_import
 import 'package:flutter/rendering.dart';
+import 'package:flutter_svg/svg.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,8 +23,6 @@ class MyApp extends StatelessWidget {
 
 class English extends StatelessWidget {
   const English({super.key});
-  
-  get SvgPicture => null;
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +44,7 @@ class English extends StatelessWidget {
       ),
       // ignore: sized_box_for_whitespace
       body: Container(
-        color: Colors.black,
+        color: const Color.fromARGB(255, 30, 29, 29),
         height: double.infinity,
         width: double.infinity,
         child: Column(
@@ -66,7 +63,7 @@ class English extends StatelessWidget {
               height: 200.0,
               width: 100.0,
             ),
-            Container(color: Colors.red,
+            Container(
               child: Row(
                 children: [
                   Container(
@@ -101,18 +98,32 @@ class English extends StatelessWidget {
               width: 20.0,
             ),
             Container(
-              child:const Row(
+              margin: const EdgeInsets.only(left: 20.0),
+              alignment: Alignment.bottomLeft,
+              child: Row(
                 children: [
-                
+                  SvgPicture.asset(
+                    "assets/img/icons8-gmail.SVG",
+                    // ignore: deprecated_member_use
+                    height: 25.0,
+                    width: 15.0,
+                  ),
+                  const Text(
+                    "  Mail",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  Container(
+                    child: Text(
+                      " :        maltager658@gmail.com",
+                      style: TextStyle(color: Colors.white, fontSize: 20.0),
+                    ),
+                  )
                 ],
               ),
-             
-              ),
+            ),
           ],
         ),
-          
-        ),
-      );
-        
+      ),
+    );
   }
 }
