@@ -28,7 +28,7 @@ class English extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 247, 243, 243),
+        backgroundColor: Colors.grey[850],
         elevation: 50.0,
         title: const Center(
           child: Text(
@@ -78,24 +78,74 @@ class English extends StatelessWidget {
                       textAlign: TextAlign.left,
                     ),
                   ),
-                  Container(
-                    margin: const EdgeInsets.only(left: 20.0),
-                    child: const Text(
-                      "Mohamed Ahmed",
-                      style: TextStyle(
-                        color: Colors.white70,
-                        fontSize: 25.0,
-                        // fontWeight: FontWeight.bold,
-                      ),
-                      textAlign: TextAlign.left,
-                    ),
-                  ),
                 ],
               ),
+            ),
+            Row(
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(
+                    left: 20.0,
+                    top: 10.0,
+                  ),
+                  child: const Text(
+                    "Mohamed Ahmed",
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontSize: 25.0,
+                      // fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.left,
+                  ),
+                ),
+              ],
             ),
             const SizedBox(
               height: 40.0,
               width: 20.0,
+            ),
+            Container(
+              child: Row(
+                children: [
+                  Container(
+                    margin: const EdgeInsets.only(left: 20.0),
+                    child: const Text(
+                      "current  level",
+                      style: TextStyle(
+                          color: Color.fromARGB(255, 230, 218, 218),
+                          fontSize: 25.0,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  const Text(
+                    "  :",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 230, 218, 218),
+                        fontSize: 25.0,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
+            ),
+            Row(
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(
+                    left: 30.0,
+                    top: 10.0,
+                  ),
+                  child: const Text(
+                    "junior",
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 230, 218, 218),
+                      fontSize: 25.0,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 40.0,
             ),
             Container(
               margin: const EdgeInsets.only(left: 20.0),
@@ -109,18 +159,26 @@ class English extends StatelessWidget {
                     width: 15.0,
                   ),
                   const Text(
-                    "  Mail",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  Container(
-                    child:const Text(
-                      " :        maltager658@gmail.com",
-                      style: TextStyle(color: Colors.white, fontSize: 20.0),
+                    "  Mail :",
+                    style: TextStyle(
+                      color: Color.fromARGB(255, 255, 255, 255),
+                      fontSize: 25.0,
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
+            Row(
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(top: 10.0),
+                  child: const Text(
+                    "   maltager658@gmail.com",
+                    style: TextStyle(color: Colors.white, fontSize: 20.0),
+                  ),
+                ),
+              ],
+            )
           ],
         ),
       ),
